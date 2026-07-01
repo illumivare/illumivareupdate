@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Illumivare — Custom Stylesheet (CSS3)
+   ========================================================================== */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #111212;
+}
+::-webkit-scrollbar-thumb {
+    background: #3e86c6;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fc815a;
+}
+
+/* Audio Visualizer Spectrum Animations */
+@keyframes bounce-spectrum {
+    0%, 100% { 
+        transform: scaleY(0.25); 
+    }
+    50% { 
+        transform: scaleY(1); 
+    }
+}
+
+.animate-spectrum {
+    animation: bounce-spectrum 1s ease-in-out infinite;
+    transform-origin: bottom;
+}
