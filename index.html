@@ -293,68 +293,55 @@
                 <!-- Portfolio Grid -->
                 <div class="grid md:grid-cols-3 gap-8 mb-16">
                     <!-- Portfolio Item 1 (Laundry) -->
-                    <a href="https://www.youtube.com/watch?v=lcJRe5HA24A" target="_blank" rel="noopener noreferrer" class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300 cursor-pointer" id="portfolio-item-laundry">
-                        <div class="relative aspect-video w-full bg-gray-200 overflow-hidden">
-                            <!-- High resolution local thumbnail image -->
-                            <img src="assets/images/laundry-thumbnail.png" alt="Local Service Ad — Laundry" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1545173168-9f19472ef7f4?auto=format&fit=crop&w=600&q=80'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-white text-cobalt shadow-lg flex items-center justify-center transition-all duration-300 group-hover:bg-coral group-hover:text-white group-hover:scale-110 active:scale-95">
-                                    <i data-lucide="play" class="w-7 h-7 fill-current ml-1"></i>
-                                </div>
-                            </div>
+                    <div class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300" id="portfolio-item-laundry">
+                        <div class="relative aspect-video w-full bg-black overflow-hidden">
+                            <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/lcJRe5HA24A?rel=0&modestbranding=1" title="Local Service Ad — Laundry" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                                 <span class="text-[9px] font-bold text-cobalt tracking-[1.5px] uppercase bg-cobalt/5 px-2 py-0.5 rounded">Done-for-You Production</span>
-                                <span class="text-gray-300">•</span>
                                 <span class="text-xs font-semibold text-gray-500 font-mono tracking-wider">Local Service Business</span>
                             </div>
-                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal group-hover:text-cobalt transition-colors">Local Service Ad — Laundry</h3>
+                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal mb-3">Local Service Ad — Laundry</h3>
+                            <button onclick="openVideoModal('laundry')" class="mt-auto inline-flex items-center text-xs font-bold uppercase tracking-wider text-cobalt hover:text-coral transition-colors">
+                                <i data-lucide="maximize-2" class="w-3.5 h-3.5 mr-1.5"></i> Expand Theater View
+                            </button>
                         </div>
-                    </a>
+                    </div>
 
                     <!-- Portfolio Item 2 (Wellness) -->
-                    <a href="https://www.youtube.com/shorts/pEkcPb-M1eI" target="_blank" rel="noopener noreferrer" class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300 cursor-pointer" id="portfolio-item-wellness">
-                        <div class="relative aspect-video w-full bg-gray-200 overflow-hidden">
-                            <img src="assets/images/wellness-thumbnail.png" alt="DTC Product Ad — Wellness" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-white text-cobalt shadow-lg flex items-center justify-center transition-all duration-300 group-hover:bg-coral group-hover:text-white group-hover:scale-110 active:scale-95">
-                                    <i data-lucide="play" class="w-7 h-7 fill-current ml-1"></i>
-                                </div>
-                            </div>
+                    <div class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300" id="portfolio-item-wellness">
+                        <div class="relative aspect-video w-full bg-black overflow-hidden">
+                            <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/pEkcPb-M1eI?rel=0&modestbranding=1" title="DTC Product Ad — Wellness" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                                 <span class="text-[9px] font-bold text-cobalt tracking-[1.5px] uppercase bg-cobalt/5 px-2 py-0.5 rounded">Done-for-You Production</span>
-                                <span class="text-gray-300">•</span>
                                 <span class="text-xs font-semibold text-gray-500 font-mono tracking-wider">Sleep Supplement Brand</span>
                             </div>
-                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal group-hover:text-cobalt transition-colors">DTC Product Ad — Wellness</h3>
+                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal mb-3">DTC Product Ad — Wellness</h3>
+                            <button onclick="openVideoModal('wellness')" class="mt-auto inline-flex items-center text-xs font-bold uppercase tracking-wider text-cobalt hover:text-coral transition-colors">
+                                <i data-lucide="maximize-2" class="w-3.5 h-3.5 mr-1.5"></i> Expand Theater View
+                            </button>
                         </div>
-                    </a>
+                    </div>
 
                     <!-- Portfolio Item 3 (Beverage) -->
-                    <a href="https://www.youtube.com/watch?v=FROj4azBM6U" target="_blank" rel="noopener noreferrer" class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300 cursor-pointer" id="portfolio-item-spirits">
-                        <div class="relative aspect-video w-full bg-gray-200 overflow-hidden">
-                            <img src="assets/images/spirits-thumbnail.png" alt="DTC Product Ad — Beverage" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://images.unsplash.com/photo-1527061011665-3652c757a4d4?auto=format&fit=crop&w=600&q=80'">
-                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity"></div>
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-16 h-16 rounded-full bg-white text-cobalt shadow-lg flex items-center justify-center transition-all duration-300 group-hover:bg-coral group-hover:text-white group-hover:scale-110 active:scale-95">
-                                    <i data-lucide="play" class="w-7 h-7 fill-current ml-1"></i>
-                                </div>
-                            </div>
+                    <div class="group flex flex-col rounded-xl bg-white border border-gray-100 overflow-hidden shadow-[0_4px_6px_rgba(0,0,0,0.02)] hover:shadow-xl transition-all duration-300" id="portfolio-item-spirits">
+                        <div class="relative aspect-video w-full bg-black overflow-hidden">
+                            <iframe class="w-full h-full border-0" src="https://www.youtube.com/embed/FROj4azBM6U?rel=0&modestbranding=1" title="DTC Product Ad — Beverage" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="p-6 flex flex-col flex-grow">
-                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
                                 <span class="text-[9px] font-bold text-cobalt tracking-[1.5px] uppercase bg-cobalt/5 px-2 py-0.5 rounded">Done-for-You Production</span>
-                                <span class="text-gray-300">•</span>
                                 <span class="text-xs font-semibold text-gray-500 font-mono tracking-wider">Spirits Brand</span>
                             </div>
-                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal group-hover:text-cobalt transition-colors">DTC Product Ad — Beverage</h3>
+                            <h3 class="text-lg font-bold font-display tracking-tight text-charcoal mb-3">DTC Product Ad — Beverage</h3>
+                            <button onclick="openVideoModal('beverage')" class="mt-auto inline-flex items-center text-xs font-bold uppercase tracking-wider text-cobalt hover:text-coral transition-colors">
+                                <i data-lucide="maximize-2" class="w-3.5 h-3.5 mr-1.5"></i> Expand Theater View
+                            </button>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <!-- Central CTA -->
@@ -640,7 +627,7 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE VIDEO PLAYBACK SIMULATION LIGHTBOX MODAL -->
+    <!-- LIVE VIDEO PLAYBACK LIGHTBOX MODAL -->
     <div id="video-modal-overlay" class="fixed inset-0 z-50 bg-charcoal/95 flex items-center justify-center p-4 sm:p-6 md:p-8 hidden opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true">
         <div id="video-modal-content" class="relative w-full max-w-4xl bg-[#1c1d1e] rounded-2xl overflow-hidden shadow-2xl border border-white/10 scale-95 transition-transform duration-300">
             
@@ -649,80 +636,36 @@
                 <div class="flex items-center space-x-2">
                     <span class="w-2 h-2 rounded-full bg-coral animate-ping"></span>
                     <h4 class="text-sm font-bold text-white tracking-wide font-display" id="modal-video-category">
-                        Production Demo Playback
+                        Production Format Showcase
                     </h4>
                 </div>
-                <button onclick="closeVideoModal()" class="p-1.5 rounded-full hover:bg-white/10 text-white transition-colors" aria-label="Close demo preview">
+                <button onclick="closeVideoModal()" class="p-1.5 rounded-full hover:bg-white/10 text-white transition-colors" aria-label="Close video player">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
 
-            <!-- Main Simulated Video Viewport -->
+            <!-- Main Live YouTube Video Viewport -->
             <div class="relative aspect-video w-full bg-black">
-                <!-- Video cover image -->
-                <img id="modal-video-image" src="" alt="Video Preview" class="w-full h-full object-cover select-none">
-
-                <!-- Dark vignette styling -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none"></div>
-
-                <!-- Animated Audio Spectrum Bars overlay -->
-                <div id="audio-spectrum-overlay" class="absolute bottom-6 left-6 flex items-end space-x-1 h-8 px-2 bg-black/40 backdrop-blur-sm rounded-md py-1.5 pointer-events-none hidden">
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.1s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.3s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.5s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.2s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.4s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.7s"></div>
-                    <div class="w-1 bg-coral h-full animate-spectrum" style="animation-delay: 0.6s"></div>
-                    <span class="text-[9px] font-mono font-bold text-white uppercase tracking-wider pl-1.5 select-none">LIVE SPECTRUM</span>
-                </div>
-
-                <!-- Big Center play icon overlay -->
-                <div id="big-play-btn" onclick="togglePlayState()" class="absolute inset-0 flex items-center justify-center cursor-pointer transition-opacity duration-300">
-                    <div class="w-20 h-20 rounded-full bg-coral/90 text-white shadow-xl flex items-center justify-center transition-transform hover:scale-105 active:scale-95">
-                        <i data-lucide="play" class="w-9 h-9 fill-current ml-1"></i>
-                    </div>
-                </div>
-
-                <!-- Custom Watermark -->
-                <div class="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur-sm rounded text-[10px] font-mono tracking-widest text-gray-300 border border-white/5 select-none">
-                    AI-SYNTHESIZED • RENDERED
-                </div>
+                <!-- YouTube Iframe Embed -->
+                <iframe id="modal-youtube-iframe" class="w-full h-full border-0" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
 
-            <!-- Bottom Video Controls Simulator -->
+            <!-- Bottom Video Details & Real Playback Controls -->
             <div class="p-6 bg-charcoal text-white">
                 <!-- Title & Meta -->
                 <div class="mb-4">
-                    <h3 id="modal-video-title" class="text-lg font-bold font-display text-white">Video Title</h3>
+                    <h3 id="modal-video-title" class="text-lg font-bold font-display text-white">Supplement Mockup</h3>
                     <p class="text-xs text-gray-400 mt-1">
                         Format: <span id="modal-video-meta-format" class="text-coral font-bold">Category</span> (<span id="modal-video-meta-duration">30 seconds</span>)
                     </p>
                 </div>
 
-                <!-- Progress bar -->
-                <div class="space-y-1.5">
-                    <div id="video-progress-bar-container" onclick="clickProgressBar(event)" class="relative w-full h-1 bg-white/20 rounded-full cursor-pointer overflow-hidden">
-                        <div id="video-progress-fill" class="absolute left-0 top-0 h-full bg-coral transition-all duration-150 ease-out w-0"></div>
-                    </div>
-                    <div class="flex items-center justify-between text-[11px] font-mono text-gray-400">
-                        <span id="current-playtime">0:00</span>
-                        <span id="total-playtime">0:15</span>
-                    </div>
-                </div>
-
                 <!-- Action Button Row -->
                 <div class="flex flex-wrap items-center justify-between mt-6 pt-4 border-t border-white/5 gap-4">
                     <div class="flex items-center space-x-4">
-                        <button onclick="togglePlayState()" id="play-pause-btn" class="px-4 py-2 rounded bg-white/10 hover:bg-white/20 text-xs font-bold uppercase tracking-wider transition-colors">
-                            Play Video
+                        <button onclick="replayVideo()" class="px-4 py-2 rounded bg-coral hover:bg-coral/80 text-white text-xs font-bold uppercase tracking-wider transition-all duration-200 flex items-center shadow-md active:scale-95">
+                            <i data-lucide="rotate-ccw" class="w-4 h-4 mr-1.5 animate-pulse"></i> Replay Video
                         </button>
-                        <button onclick="toggleMuteState()" id="mute-toggle-btn" class="p-2 rounded hover:bg-white/10 text-gray-300 hover:text-white transition-colors" title="Mute/Unmute Audio Simulation">
-                            <i data-lucide="volume-2" id="mute-icon" class="w-[18px] h-[18px]"></i>
-                        </button>
-                        <a id="modal-youtube-link" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-wider transition-colors flex items-center">
-                            <i data-lucide="youtube" class="w-4 h-4 mr-1.5"></i> Watch on YouTube
-                        </a>
                     </div>
 
                     <a href="#contact" onclick="closeVideoModal()" class="px-5 py-2 rounded-lg bg-cobalt hover:bg-coral text-white text-xs font-bold uppercase tracking-widest transition-colors flex items-center">
@@ -850,63 +793,56 @@
             });
         });
 
-        // 4. Video Playback Simulation lightbox modal logic
+        // 4. Live Video Playback lightbox modal logic
         const videoData = {
             laundry: {
-                title: 'High-Converting Local HVAC/Service Ad Template Demo',
+                title: 'Local Service Demo',
                 category: 'Local Service Ad — Laundry',
                 duration: '15 seconds ad spot',
                 image: 'assets/images/laundry-thumbnail.png',
-                youtube: 'https://www.youtube.com/watch?v=lcJRe5HA24A'
+                youtube: 'https://www.youtube.com/watch?v=lcJRe5HA24A',
+                embedId: 'lcJRe5HA24A'
             },
             wellness: {
-                title: 'Premium Skincare Dynamic AI Cinematic Ad Mockup',
+                title: 'Supplement Mockup',
                 category: 'DTC Product Ad — Wellness',
-                duration: '30 seconds social hook ad',
+                duration: '15 seconds social hook ad',
                 image: 'assets/images/wellness-thumbnail.png',
-                youtube: 'https://www.youtube.com/shorts/pEkcPb-M1eI'
+                youtube: 'https://www.youtube.com/shorts/pEkcPb-M1eI',
+                embedId: 'pEkcPb-M1eI'
             },
             beverage: {
-                title: 'AI Video Masterclass - Production & Scripting Live Output',
+                title: 'Beverage Brand Demo',
                 category: 'DTC Product Ad — Beverage',
-                duration: 'Workshop Masterclass Highlight Reel',
+                duration: '15 seconds ad',
                 image: 'assets/images/spirits-thumbnail.png',
-                youtube: 'https://www.youtube.com/watch?v=FROj4azBM6U'
+                youtube: 'https://www.youtube.com/watch?v=FROj4azBM6U',
+                embedId: 'FROj4azBM6U'
             }
         };
 
         let activeVideo = null;
-        let isPlaying = false;
-        let isMuted = false;
-        let progress = 0;
-        let playbackInterval = null;
 
         const modalOverlay = document.getElementById('video-modal-overlay');
         const modalContent = document.getElementById('video-modal-content');
-        const modalImage = document.getElementById('modal-video-image');
         const modalTitle = document.getElementById('modal-video-title');
         const modalCategory = document.getElementById('modal-video-category');
         const modalFormat = document.getElementById('modal-video-meta-format');
         const modalDuration = document.getElementById('modal-video-meta-duration');
-        const progressFill = document.getElementById('video-progress-fill');
-        const currentPlaytime = document.getElementById('current-playtime');
-        const playPauseBtn = document.getElementById('play-pause-btn');
-        const muteToggleBtn = document.getElementById('mute-toggle-btn');
-        const muteIcon = document.getElementById('mute-icon');
-        const spectrumOverlay = document.getElementById('audio-spectrum-overlay');
-        const bigPlayBtn = document.getElementById('big-play-btn');
+        const modalIframe = document.getElementById('modal-youtube-iframe');
 
         function openVideoModal(id) {
             activeVideo = videoData[id];
             if (!activeVideo) return;
 
             // Fill meta details
-            modalImage.src = activeVideo.image;
             modalTitle.innerText = activeVideo.title;
             modalCategory.innerText = activeVideo.category + " Playback";
             modalFormat.innerText = activeVideo.category;
             modalDuration.innerText = activeVideo.duration;
-            document.getElementById('modal-youtube-link').href = activeVideo.youtube;
+
+            // Load iframe source
+            modalIframe.src = `https://www.youtube.com/embed/${activeVideo.embedId}?autoplay=1&rel=0&enablejsapi=1`;
 
             // Open overlay with fade animation
             modalOverlay.classList.remove('hidden');
@@ -915,18 +851,13 @@
                 modalContent.classList.remove('scale-95');
                 modalContent.classList.add('scale-100');
             }, 10);
-
-            // Reset video state
-            isPlaying = false;
-            isMuted = false;
-            progress = 0;
-            updatePlayStateUI();
-            updateMuteStateUI();
-            updateProgressUI();
         }
 
         function closeVideoModal() {
-            clearInterval(playbackInterval);
+            // Unload iframe source to stop playback instantly
+            if (modalIframe) {
+                modalIframe.src = '';
+            }
             modalOverlay.classList.add('opacity-0');
             modalContent.classList.remove('scale-100');
             modalContent.classList.add('scale-95');
@@ -936,58 +867,11 @@
             activeVideo = null;
         }
 
-        function togglePlayState() {
-            isPlaying = !isPlaying;
-            if (isPlaying) {
-                bigPlayBtn.classList.add('opacity-0', 'pointer-events-none');
-                spectrumOverlay.classList.remove('hidden');
-                playbackInterval = setInterval(() => {
-                    progress += 2;
-                    if (progress > 100) {
-                        progress = 0;
-                    }
-                    updateProgressUI();
-                }, 300);
-            } else {
-                bigPlayBtn.classList.remove('opacity-0', 'pointer-events-none');
-                spectrumOverlay.classList.add('hidden');
-                clearInterval(playbackInterval);
+        function replayVideo() {
+            if (modalIframe && activeVideo) {
+                // Instantly restart playback of the currently loaded video
+                modalIframe.src = `https://www.youtube.com/embed/${activeVideo.embedId}?autoplay=1&rel=0&enablejsapi=1`;
             }
-            updatePlayStateUI();
-        }
-
-        function toggleMuteState() {
-            isMuted = !isMuted;
-            updateMuteStateUI();
-        }
-
-        function updatePlayStateUI() {
-            playPauseBtn.innerText = isPlaying ? 'Pause Video' : 'Play Video';
-        }
-
-        function updateMuteStateUI() {
-            if (isMuted) {
-                muteToggleBtn.innerHTML = '<i data-lucide="volume-x" class="w-[18px] h-[18px]"></i>';
-                spectrumOverlay.classList.add('opacity-40');
-            } else {
-                muteToggleBtn.innerHTML = '<i data-lucide="volume-2" class="w-[18px] h-[18px]"></i>';
-                spectrumOverlay.classList.remove('opacity-40');
-            }
-            lucide.createIcons();
-        }
-
-        function updateProgressUI() {
-            progressFill.style.width = progress + '%';
-            let seconds = Math.floor((progress / 100) * 15);
-            currentPlaytime.innerText = `0:${seconds < 10 ? '0' + seconds : seconds}`;
-        }
-
-        function clickProgressBar(e) {
-            const container = document.getElementById('video-progress-bar-container');
-            const rect = container.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
-            progress = Math.round((clickX / rect.width) * 100);
-            updateProgressUI();
         }
 
         // Close modal on click outside content card
@@ -998,15 +882,12 @@
         });
 
 
-        // 5. Contact Form submission logic (Web3Forms API wrapper)
+        // 5. Contact Form submission logic (MongoDB Atlas API Integration)
         const contactForm = document.getElementById('contact-form');
         const formSuccessView = document.getElementById('form-success-view');
         const formErrorDisplay = document.getElementById('form-error-display');
         const submitButton = document.getElementById('submit-button');
         const buttonText = document.getElementById('button-text');
-
-        // Note: Users can replace this dummy API key with their actual Web3Forms Access Key
-        const WEB3FORMS_DUMMY_KEY = "YOUR_WEB3FORMS_ACCESS_KEY_HERE";
 
         async function handleFormSubmission(event) {
             event.preventDefault();
@@ -1035,57 +916,35 @@
                 contactMethod: document.querySelector('input[name="contactMethod"]:checked')?.value || 'Email'
             };
 
-            // If user has set an actual Access Key, post it to Web3Forms
-            const hasRealKey = WEB3FORMS_DUMMY_KEY !== "YOUR_WEB3FORMS_ACCESS_KEY_HERE" && WEB3FORMS_DUMMY_KEY.trim() !== "";
-            
-            if (hasRealKey) {
-                try {
-                    const response = await fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Accept': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            access_key: WEB3FORMS_DUMMY_KEY,
-                            subject: `New Lead from Illumivare: ${formData.fullName}`,
-                            from_name: 'Illumivare Contact Form',
-                            name: formData.fullName,
-                            email: formData.email,
-                            business_name: formData.businessName,
-                            service: formData.service,
-                            budget: formData.budget,
-                            timeline: formData.timeline,
-                            contact_method: formData.contactMethod,
-                            message: formData.details
-                        })
-                    });
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
 
-                    const result = await response.json();
-                    if (response.ok && result.success) {
-                        showSuccessState();
-                    } else {
-                        throw new Error(result.message || 'Something went wrong submitting the form.');
-                    }
-                } catch (err) {
-                    console.error('Submission error:', err);
-                    showErrorState(err.message || 'Failed to submit message. Please check your network connection or try again.');
-                }
-            } else {
-                // FALLBACK: Simulate submission with high-fidelity so they can verify the UI and logic
-                console.info('Form submitted in simulation mode. Define your WEB3FORMS_DUMMY_KEY variable inside index.html to receive actual email submissions!');
-                setTimeout(() => {
-                    // Persist lead data locally for client evaluation backup
-                    const savedInquiries = JSON.parse(localStorage.getItem('illumivare_inquiries') || '[]');
-                    savedInquiries.push({
-                        ...formData,
-                        date: new Date().toLocaleString(),
-                        id: Math.random().toString(36).substr(2, 9)
-                    });
-                    localStorage.setItem('illumivare_inquiries', JSON.stringify(savedInquiries));
-                    
+                const result = await response.json();
+                if (response.ok && result.success) {
                     showSuccessState();
-                }, 1200);
+                } else {
+                    throw new Error(result.message || 'Failed to submit lead data to backend.');
+                }
+            } catch (err) {
+                console.error('Submission error:', err);
+                
+                // Save locally as temporary offline fallback so data is not lost
+                const savedInquiries = JSON.parse(localStorage.getItem('illumivare_inquiries') || '[]');
+                savedInquiries.push({
+                    ...formData,
+                    date: new Date().toLocaleString(),
+                    id: Math.random().toString(36).substr(2, 9),
+                    syncStatus: 'pending'
+                });
+                localStorage.setItem('illumivare_inquiries', JSON.stringify(savedInquiries));
+                
+                showErrorState(err.message || 'Database connection error. Your draft has been saved locally. Please verify that MONGODB_URI is configured correctly in Settings.');
             }
         }
 
